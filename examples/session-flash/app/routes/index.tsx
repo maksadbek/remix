@@ -38,7 +38,6 @@ export const action: ActionFunction = async ({ request }) => {
 
   return redirect(".", {
     headers: { "Set-Cookie": await storage.commitSession(session) },
-    status: 200,
   });
 };
 
